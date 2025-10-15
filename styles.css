@@ -1,0 +1,162 @@
+       :root {
+            --primary-green: #013220;
+            --secondary-green: #024731;
+            --accent-gold: #D4AF37;
+            --dark-black: #000000;
+            --light-white: #F9F9F9;
+        }
+        
+        .bg-primary-green { background-color: var(--primary-green); }
+        .bg-secondary-green { background-color: var(--secondary-green); }
+        .text-primary-green { color: var(--primary-green); }
+        .text-secondary-green { color: var(--secondary-green); }
+        
+        .bg-accent-gold { background-color: var(--accent-gold); }
+        .text-accent-gold { color: var(--accent-gold); }
+        .border-accent-gold { border-color: var(--accent-gold); }
+        
+        @media (prefers-reduced-motion: reduce) {
+            * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+        }
+        
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .underlined {
+            position: relative;
+        }
+        
+        .underlined:after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        .underlined:hover:after {
+            width: 100%;
+        }
+        
+        .form-input {
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-input:focus {
+            border-color: var(--accent-gold);
+            outline: none;
+        }
+        
+        .btn-press:active {
+            transform: scale(0.95);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, #F4D03F 100%);
+        }
+        
+        .green-gradient {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+        }
+        
+        .dark-section {
+            background-color: var(--primary-green);
+            color: var(--light-white);
+        }
+        
+        .light-section {
+            background-color: var(--secondary-green);
+            color: var(--light-white);
+        }
+        
+        .card-dark {
+            background-color: var(--primary-green);
+            color: var(--light-white);
+        }
+        
+        .card-light {
+            background-color: var(--secondary-green);
+            color: var(--light-white);
+        }
+        
+        .gold-hover:hover {
+            color: var(--accent-gold);
+        }
+        
+        .gold-border {
+            border-color: var(--accent-gold);
+        }
+        
+        /* Enhanced Gallery Styles */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        
+        .gallery-item img {
+            transition: all 0.5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.8);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgba(1, 50, 32, 0.8) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-caption {
+            color: white;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* Portfolio Card Styles */
+        .portfolio-card {
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }

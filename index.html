@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahu-ma Global Nigeria Limited | Premium Agro-Commodities Export</title>
+    <meta name="description" content="Leading Nigerian agro-commodities company specializing in ginger, turmeric, sesame seeds, and shea butter production & export. Quality assured from farm to global markets.">
+    
+    <!-- Tailwind JIT -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- GSAP for Micro-interactions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body class="font-sans bg-primary-green text-light-white">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 bg-primary-green/95 backdrop-blur-md border-b border-accent-gold/20 transition-all duration-300" data-aos="fade-down" data-aos-delay="100">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold text-accent-gold flex items-center gap-2">
+                <i data-feather="leaf" class="w-6 h-6"></i> Ahu-ma Global
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="underlined text-light-white hover:text-accent-gold transition">Home</a>
+                <a href="#about" class="underlined text-light-white hover:text-accent-gold transition">About</a>
+                <a href="#services" class="underlined text-light-white hover:text-accent-gold transition">Services</a>
+                <a href="#portfolio" class="underlined text-light-white hover:text-accent-gold transition">Portfolio</a>
+                <a href="#products" class="underlined text-light-white hover:text-accent-gold transition">Products</a>
+                <a href="#gallery" class="underlined text-light-white hover:text-accent-gold transition">Gallery</a>
+                <a href="#testimonials" class="underlined text-light-white hover:text-accent-gold transition">Testimonials</a>
+                <a href="#contact" class="underlined text-light-white hover:text-accent-gold transition">Contact</a>
+                <a href="#contact" class="btn-press gold-gradient text-primary-green px-6 py-2 rounded-full hover:opacity-90 transition font-semibold">Book a Consultation</a>
+            </div>
+            
+            <button id="mobile-menu" class="md:hidden p-2 rounded-full hover:bg-secondary-green transition">
+                <i data-feather="menu" class="w-6 h-6 text-accent-gold"></i>
+            </button>
+        </nav>
+        
+        <div id="mobile-nav" class="hidden md:hidden px-4 pb-4 bg-primary-green border-t border-accent-gold/20">
+            <div class="flex flex-col gap-4">
+                <a href="#home" class="py-2 text-light-white hover:text-accent-gold transition">Home</a>
+                <a href="#about" class="py-2 text-light-white hover:text-accent-gold transition">About</a>
+                <a href="#services" class="py-2 text-light-white hover:text-accent-gold transition">Services</a>
+                <a href="#portfolio" class="py-2 text-light-white hover:text-accent-gold transition">Portfolio</a>
+                <a href="#products" class="py-2 text-light-white hover:text-accent-gold transition">Products</a>
+                <a href="#gallery" class="py-2 text-light-white hover:text-accent-gold transition">Gallery</a>
+                <a href="#testimonials" class="py-2 text-light-white hover:text-accent-gold transition">Testimonials</a>
+                <a href="#contact" class="py-2 text-light-white hover:text-accent-gold transition">Contact</a>
+                <a href="#contact" class="gold-gradient text-primary-green px-6 py-2 rounded-full hover:opacity-90 transition font-semibold text-center">Book a Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center hero-bg pt-24">
+        <div class="absolute inset-0 bg-primary-green/80"></div>
+        <div class="container mx-auto px-4 text-center text-light-white z-10" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+                Empowering Global Agro-Trade with 
+                <span class="text-accent-gold">Premium Quality</span> Commodities
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                From Nigeria's fertile lands to global markets — we source, produce, and deliver excellence
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn-press gold-gradient text-primary-green px-8 py-4 rounded-full text-lg shadow-lg hover:opacity-90 transition font-semibold">
+                    Book a Consultation
+                </a>
+                <a href="#products" class="btn-press border-2 border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-primary-green px-8 py-4 rounded-full text-lg transition font-semibold">
+                    Explore Our Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 dark-section">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" data-aos-delay="100">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 text-accent-gold">About Ahu-ma Global</h2>
+                    <p class="text-lg mb-6">
+                        We are Nigeria's premier agro-commodities company, specializing in the production,
+                        aggregation, sourcing, and export of premium agricultural products. Our commitment
+                        to quality and sustainability has made us a trusted partner for clients worldwide.
+                    </p>
+                    <p class="text-lg mb-6">
+                        With years of experience in the agricultural sector, we bridge the gap between
+                        local farmers and international markets, ensuring fair prices for producers
+                        and premium quality for buyers.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-6 mt-8">
+                        <div class="text-center p-4 card-light rounded-lg shadow-md">
+                            <h3 class="text-3xl font-bold text-accent-gold">5,000+</h3>
+                            <p>Farmers Partnered</p>
+                        </div>
+                        <div class="text-center p-4 card-light rounded-lg shadow-md">
+                            <h3 class="text-3xl font-bold text-accent-gold">25+</h3>
+                            <p>Countries Served</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-delay="200">
+                    <img src="ahuama about.jpg" alt="About Ahu-ma Global" class="w-full rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 md:py-32 light-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-accent-gold">Our Services</h2>
+                <p class="text-lg max-w-2xl mx-auto">
+                    End-to-end agro-commodities solutions from farm to global markets
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-dark p-8 rounded-2xl shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gold-gradient rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="users" class="w-8 h-8 text-primary-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-accent-gold">Ginger Farming Consultancy</h3>
+                    <p>We offer training and hand-holding support for farmers, guiding them through every stage from planting to export readiness.</p>
+                </div>
+                
+                <div class="card-dark p-8 rounded-2xl shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gold-gradient rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="package" class="w-8 h-8 text-primary-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-accent-gold">Agro-Commodity Sourcing & Supply</h3>
+                    <p>We provide premium, quality-tested agro products to both local and international buyers.</p>
+                </div>
+                
+                <div class="card-dark p-8 rounded-2xl shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gold-gradient rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i data-feather="globe" class="w-8 h-8 text-primary-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-accent-gold">Export Services</h3>
+                    <p>We handle global export logistics, ensuring timely and secure delivery of commodities.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="inline-flex items-center gold-gradient text-primary-green px-8 py-4 rounded-full font-semibold hover:opacity-90 transition">
+                    Book a Consultation
+                    <i data-feather="chevron-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 md:py-32 dark-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-accent-gold">Our Portfolio</h2>
+                <p class="text-lg max-w-2xl mx-auto">Take a look at some of our completed projects and export partnerships</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="portfolio-card card-light rounded-2xl shadow-lg overflow-hidden border border-accent-gold/20" data-aos="fade-right" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="ginger.jpg" alt="Ginger Export" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-accent-gold">Ginger Export 2024</h3>
+                        <p class="mb-4">Processed and shipped 500 tons to Europe</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-accent-gold">Completed</span>
+                            <span class="text-sm">€2.5M Value</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card card-light rounded-2xl shadow-lg overflow-hidden border border-accent-gold/20" data-aos="fade-left" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="Tumeric.jpg" alt="Turmeric Supply" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-accent-gold">Turmeric Supply Program</h3>
+                        <p class="mb-4">Partnered with 200+ local farmers</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-accent-gold">Ongoing</span>
+                            <span class="text-sm">150 Tons/Month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card card-light rounded-2xl shadow-lg overflow-hidden border border-accent-gold/20" data-aos="fade-right" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="seame seed.jpg" alt="seame seed Hub" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-accent-gold">seame seed Aggregation Hub</h3>
+                        <p class="mb-4">Established export-ready supply chain</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-accent-gold">Completed</span>
+                            <span class="text-sm">1,000+ Farmers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card card-light rounded-2xl shadow-lg overflow-hidden border border-accent-gold/20" data-aos="fade-left" data-aos-delay="400">
+                    <div class="h-48 overflow-hidden">
+                        <img src="zobo drink.jpg" alt="Cocoa Network" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-accent-gold">Global Cocoa Network</h3>
+                        <p class="mb-4">Delivering high-grade cocoa worldwide</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-accent-gold">Expanding</span>
+                            <span class="text-sm">15 Countries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 md:py-32 light-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-accent-gold">Our Products</h2>
+                <p class="text-lg max-w-2xl mx-auto">Premium agricultural commodities cultivated with care</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-dark rounded-2xl overflow-hidden shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-6 text-center">
+                        <img src="dry ginger.jpg" alt="Dried Split Ginger" class="w-full h-32 object-cover rounded-lg mb-4 mx-auto">
+                        <h3 class="text-lg font-bold mb-2 text-accent-gold">Dried Split Ginger</h3>
+                        <p class="text-sm mb-4">Premium quality with high rhizome content</p>
+                    </div>
+                </div>
+                
+                <div class="card-dark rounded-2xl overflow-hidden shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-6 text-center">
+                        <img src="fresh Ginger.jpg" alt="Fresh Ginger" class="w-full h-32 object-cover rounded-lg mb-4 mx-auto">
+                        <h3 class="text-lg font-bold mb-2 text-accent-gold">Fresh Ginger</h3>
+                        <p class="text-sm mb-4">Direct from farm with optimal freshness</p>
+                    </div>
+                </div>
+                
+                <div class="card-dark rounded-2xl overflow-hidden shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-6 text-center">
+                        <img src="Tumeric.jpg" alt="Dried Split Turmeric" class="w-full h-32 object-cover rounded-lg mb-4 mx-auto">
+                        <h3 class="text-lg font-bold mb-2 text-accent-gold">Dried Split Turmeric</h3>
+                        <p class="text-sm mb-4">High curcumin content with rich color</p>
+                    </div>
+                </div>
+                
+                <div class="card-dark rounded-2xl overflow-hidden shadow-lg hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="400">
+                    <div class="p-6 text-center">
+                        <img src="seame seed.jpg" alt="Sesame Seeds" class="w-full h-32 object-cover rounded-lg mb-4 mx-auto">
+                        <h3 class="text-lg font-bold mb-2 text-accent-gold">Sesame Seeds</h3>
+                        <p class="text-sm mb-4">Premium white and brown varieties</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="500">
+                <a href="#contact" class="inline-flex items-center gold-gradient text-primary-green px-8 py-4 rounded-full font-semibold hover:opacity-90 transition">
+                    Request Full Product Catalog
+                    <i data-feather="chevron-right" class="w-5 h-5 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 md:py-32 dark-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-accent-gold">Our Gallery</h2>
+                <p class="text-lg max-w-2xl mx-auto">Snapshots from our farms, production, and export processes</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Row 1 -->
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="ginger.jpg" alt="Ginger Farm Field">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Farm Fields</h4>
+                            <p class="text-sm">Our expansive agricultural lands</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="zobo drink.jpg" alt="Zobo Drink">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Team Training</h4>
+                            <p class="text-sm">Expert guidance for our farmers</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="chilli peper.jpg" alt="Chilli Pepper Export">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Export Logistics</h4>
+                            <p class="text-sm">Ready for global shipment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="250">
+                    <img src="commodity.jpg" alt="Commodity Harvest">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Harvest Season</h4>
+                            <p class="text-sm">Premium quality produce</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="comodity 3.jpg" alt="Processing">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Processing Facility</h4>
+                            <p class="text-sm">State-of-the-art equipment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="350">
+                    <img src="commodity 2.jpg" alt="Quality Control">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Quality Control</h4>
+                            <p class="text-sm">Rigorous testing standards</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="WhatsApp Image 2025-09-30 at 08.48.16_6f3918ef.jpg" alt="Packaging">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Packaging</h4>
+                            <p class="text-sm">Premium packaging solutions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="450">
+                    <img src="WhatsApp Image 2025-09-30 at 09.48.54_57089fb6.jpg" alt="Warehouse">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Warehouse Storage</h4>
+                            <p class="text-sm">Optimal storage conditions</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="ahuma.jpg" alt="Farmers">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Our Farmers</h4>
+                            <p class="text-sm">Dedicated agricultural experts</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="550">
+                    <img src="dry ginger.jpg" alt="Irrigation">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Irrigation Systems</h4>
+                            <p class="text-sm">Modern farming technology</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="fresh Ginger.jpg" alt="Research">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Research & Development</h4>
+                            <p class="text-sm">Innovation in agriculture</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="650">
+                    <img src="ahuama about.jpg" alt="Shipping">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Global Shipping</h4>
+                            <p class="text-sm">Worldwide distribution</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="700">
+                    <img src="seame seed.jpg" alt="Sustainability">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Sustainability</h4>
+                            <p class="text-sm">Eco-friendly practices</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="750">
+                    <img src="Tumeric.jpg" alt="Community">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Community</h4>
+                            <p class="text-sm">Supporting local communities</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="800">
+                    <img src="comodity 3.jpg" alt="Certification">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Certification</h4>
+                            <p class="text-sm">International quality standards</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item h-48" data-aos="zoom-in" data-aos-delay="850">
+                    <img src="commodity 2.jpg" alt="Partnership">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4 class="font-bold">Partnership</h4>
+                            <p class="text-sm">Global business relationships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 light-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-accent-gold">Client Testimonials</h2>
+                <p class="text-lg max-w-2xl mx-auto">Trusted by partners worldwide</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-dark p-8 rounded-2xl shadow-lg relative hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -top-4 -left-4 gold-gradient rounded-full w-16 h-16 flex items-center justify-center">
+                        <i data-feather="quote" class="w-8 h-8 text-primary-green"></i>
+                    </div>
+                    <p class="mb-6 mt-6">"Ahu-ma Global has been our reliable partner for premium Nigerian spices. Their quality consistency and professional service is unmatched."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-accent-gold flex items-center justify-center text-primary-green font-bold mr-4">SC</div>
+                        <div>
+                            <h4 class="font-bold text-accent-gold">Dr. Sarah Chen</h4>
+                            <p class="text-sm">Head of Procurement, Asia Pacific Foods Ltd</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-dark p-8 rounded-2xl shadow-lg relative hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -top-4 -left-4 gold-gradient rounded-full w-16 h-16 flex items-center justify-center">
+                        <i data-feather="quote" class="w-8 h-8 text-primary-green"></i>
+                    </div>
+                    <p class="mb-6 mt-6">"Working with Ahu-ma Global has transformed our export operations. Their attention to detail and quality standards are exceptional."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-accent-gold flex items-center justify-center text-primary-green font-bold mr-4">MR</div>
+                        <div>
+                            <h4 class="font-bold text-accent-gold">Michael Rodriguez</h4>
+                            <p class="text-sm">Managing Director, Euro Agro Imports</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-dark p-8 rounded-2xl shadow-lg relative hover-lift border border-accent-gold/20" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute -top-4 -left-4 gold-gradient rounded-full w-16 h-16 flex items-center justify-center">
+                        <i data-feather="quote" class="w-8 h-8 text-primary-green"></i>
+                    </div>
+                    <p class="mb-6 mt-6">"The team at Ahu-ma Global understands the importance of timely delivery and maintains excellent communication throughout the process."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-accent-gold flex items-center justify-center text-primary-green font-bold mr-4">AH</div>
+                        <div>
+                            <h4 class="font-bold text-accent-gold">Ahmed Hassan</h4>
+                            <p class="text-sm">CEO, Middle East Spice Traders</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 dark-section">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 text-accent-gold">Ready to Partner with Us?</h2>
+                    <p class="text-lg mb-8">
+                        Get in touch today to discuss your agro-commodity needs.
+                        We're here to provide solutions that work for your business.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="w-6 h-6 mr-4 text-accent-gold"></i>
+                            <span>info@ahumaglobal.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="phone" class="w-6 h-6 mr-4 text-accent-gold"></i>
+                            <span>+234 816 521 2330</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="map-pin" class="w-6 h-6 mr-4 text-accent-gold"></i>
+                            <span>Kaduna, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-light p-8 rounded-2xl shadow-2xl border border-accent-gold/20" data-aos="fade-left">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" required class="form-input w-full px-4 py-3 bg-primary-green/50 rounded-lg transition text-light-white placeholder-gray-300">
+                            <input type="email" placeholder="Your Email" required class="form-input w-full px-4 py-3 bg-primary-green/50 rounded-lg transition text-light-white placeholder-gray-300">
+                        </div>
+                        <input type="text" placeholder="Company/Organization" required class="form-input w-full px-4 py-3 bg-primary-green/50 rounded-lg transition text-light-white placeholder-gray-300">
+                        <select required class="form-input w-full px-4 py-3 bg-primary-green/50 rounded-lg transition text-light-white">
+                            <option value="" class="text-gray-700">Select Product Interest</option>
+                            <option value="ginger" class="text-gray-700">Ginger</option>
+                            <option value="turmeric" class="text-gray-700">Turmeric</option>
+                            <option value="sesame" class="text-gray-700">Sesame Seeds</option>
+                            <option value="shea-butter" class="text-gray-700">Shea Butter</option>
+                            <option value="mixed" class="text-gray-700">Mixed Products</option>
+                            <option value="other" class="text-gray-700">Other</option>
+                        </select>
+                        <textarea placeholder="Tell us about your requirements..." rows="4" required class="form-input w-full px-4 py-3 bg-primary-green/50 rounded-lg transition text-light-white placeholder-gray-300"></textarea>
+                        <button type="submit" class="btn-press w-full gold-gradient text-primary-green py-4 rounded-lg font-semibold hover:opacity-90 transition">
+                            Send Message
+                        </button>
+                        <div id="form-success" class="hidden bg-green-900 text-green-300 p-4 rounded-lg">
+                            Thank you for your message! We'll respond within 24 hours.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#012915] text-light-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#home" class="text-xl font-bold text-accent-gold flex items-center gap-2">
+                        <i data-feather="leaf" class="w-6 h-6"></i> Ahu-ma Global
+                    </a>
+                    <p class="mt-4 text-gray-300">
+                        Empowering global agro-trade with premium Nigerian commodities.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-accent-gold">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#home" class="gold-hover transition">Home</a></li>
+                        <li><a href="#about" class="gold-hover transition">About</a></li>
+                        <li><a href="#services" class="gold-hover transition">Services</a></li>
+                        <li><a href="#products" class="gold-hover transition">Products</a></li>
+                        <li><a href="#contact" class="gold-hover transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-accent-gold">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>info@ahumaglobal.com</li>
+                        <li>+234 802 123 4567</li>
+                        <li>Kaduna, Nigeria</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-accent-gold">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-primary-green rounded-full flex items-center justify-center hover:bg-accent-gold transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-green rounded-full flex items-center justify-center hover:bg-accent-gold transition">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-green rounded-full flex items-center justify-center hover:bg-accent-gold transition">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Ahu-ma Global Nigeria Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-8 right-8 w-12 h-12 gold-gradient text-primary-green rounded-full shadow-lg flex items-center justify-center transition-opacity duration-300 opacity-0">
+        <i data-feather="arrow-up" class="w-6 h-6"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
